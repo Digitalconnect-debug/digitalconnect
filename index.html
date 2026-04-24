@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitalconnect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>Digitalconnect</h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">contact</a></li>
+    </ul>
+    <button class="btn" onclick="sendWhatsApp('SEO Service')"">Get Free Consultation</button>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <div class="left">
+        <h1>Grow Your Business with Digitalconnect</h1>
+        <p>Affordable Website & Digital Marketing Services for Small Businesses</p>
+        <p>Get your business online today – simple, fast, and affordable.</p>
+
+        <div class="buttons">
+            <button onclick="sendWhatsApp('Consultation')">
+    Get Free Consultation
+</button>
+            <button onclick="location.href='demo.html'">
+    View Website Designs
+</button>
+        </div>
+
+        <p class="trust">Helping small businesses get online quickly and affordably</p>
+    </div>
+
+    <div class="right">
+        <img src="hero.png" alt="Digital Services" loading="lazy">
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services">
+    <h2>Our Services</h2>
+
+    <p class="service-intro">
+        We help small businesses get online without confusion or high cost. 
+        Our services are simple, affordable, and designed to grow your business.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600" loading="lazy">
+            <h3>Website Design</h3>
+            <p>Modern, fast, and mobile-friendly websites to build trust and attract customers.</p>
+            <button onclick="location.href='website.html'">Get Started</button>
+        </div>
+
+        <div class="card">
+    <img src="https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=600" loading="lazy">
+    
+    <h3>SEO Optimization</h3>
+    
+    <p>
+        Rank your business on Google, get more traffic, and increase customer inquiries with our professional SEO services.
+    </p>
+
+    <ul style="text-align:left; padding:0 20px; font-size:14px;">
+        <li>✔ Higher Google Ranking</li>
+        <li>✔ More Website Visitors</li>
+        <li>✔ More Leads & Calls</li>
+    </ul>
+
+    <button onclick="location.href='seo.html'">
+        Get Started
+    </button>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1557838923-2985c318be48?w=600" loading="lazy">
+
+    <h3>Digital Marketing</h3>
+
+    <p>Grow your business using smart marketing strategies.</p>
+
+    <button onclick="location.href='digital.html'" class="btn-green">
+        Get Started
+    </button>
+</div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600" loading="lazy">
+            <h3>Business Registration </h3>
+            <p>GST, FSSAI, Udyam, and all legal services support.</p>
+        <button onclick="location.href='registration.html'">
+    Get Started
+</button>
+        </div>
+
+    </div>
+</section>
+<section style="padding:60px 20px; background:#f8f9fa; text-align:center;">
+
+    <h2 style="margin-bottom:10px;">Our Pricing</h2>
+    <p style="margin-bottom:40px;">Affordable pricing for every business</p>
+
+    <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px;">
+
+        <!-- WEBSITE DESIGN -->
+        <div style="background:white; padding:25px; width:280px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1); display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+                <h3>Website Design</h3>
+                <p><b>Basic Website</b><br>₹5,999</p>
+                <p><b>Business Website</b><br>₹14,999</p>
+                <p><b>Premium Website</b><br>₹30,999</p>
+            </div>
+
+            <button onclick="sendWhatsApp('Website Design Pricing')" 
+            style="margin-top:15px; padding:10px 20px; background:#28a745; color:white; border:none; border-radius:5px;">
+            Get Started
+            </button>
+        </div>
+
+        <!-- SEO SERVICES -->
+        <div style="background:white; padding:25px; width:280px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1); display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+                <h3>SEO Services</h3>
+                <p><b>Basic SEO</b><br>₹1,999/month</p>
+                <p><b>Advanced SEO</b><br>₹3,999/month</p>
+            </div>
+
+            <button onclick="sendWhatsApp('SEO Pricing')" 
+            style="margin-top:15px; padding:10px 20px; background:#28a745; color:white; border:none; border-radius:5px;">
+            Get Started
+            </button>
+        </div>
+
+        <!-- DIGITAL MARKETING -->
+        <div style="background:white; padding:25px; width:280px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1); display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+                <h3>Digital Marketing</h3>
+                <p><b>Social Media Management</b><br>₹2,999/month</p>
+                <p><b>Ads Management</b><br>₹4,999/month</p>
+            </div>
+
+            <button onclick="sendWhatsApp('Digital Marketing Pricing')" 
+            style="margin-top:15px; padding:10px 20px; background:#28a745; color:white; border:none; border-radius:5px;">
+            Get Started
+            </button>
+        </div>
+
+        <!-- BUSINESS REGISTRATION -->
+        <div style="background:white; padding:25px; width:280px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1); display:flex; flex-direction:column; justify-content:space-between;">
+            <div>
+                <h3>Business Registration</h3>
+                <p><b>GST Registration</b><br>₹999</p>
+                <p><b>FSSAI Registration</b><br>₹1,499</p>
+                <p><b>UDYAM Registration</b><br>₹499</p>
+            </div>
+
+            <button onclick="sendWhatsApp('Business Registration Pricing')" 
+            style="margin-top:15px; padding:10px 20px; background:#28a745; color:white; border:none; border-radius:5px;">
+            Get Started
+            </button>
+        </div>
+
+    </div>
+
+    <p style="margin-top:30px; font-size:14px; color:#555;">
+        *Final price may vary based on requirements
+    </p>
+
+</section>
+<section style="padding:60px 20px; text-align:center; background:white;">
+
+<h2>Why Choose DigitalConnect?</h2>
+<p style="margin-bottom:40px;">We focus on quality, trust, and real results</p>
+
+<div style="display:flex; flex-wrap:wrap; justify-content:center; gap:20px;">
+
+<div style="width:250px; padding:20px; background:#f8f9fa; border-radius:10px;">
+<h3>Affordable Pricing</h3>
+<p>Best services at budget-friendly cost for small businesses.</p>
+</div>
+
+<div style="width:250px; padding:20px; background:#f8f9fa; border-radius:10px;">
+<h3>Fast Delivery</h3>
+<p>We deliver your website quickly without delay.</p>
+</div>
+
+<div style="width:250px; padding:20px; background:#f8f9fa; border-radius:10px;">
+<h3>Professional Design</h3>
+<p>Modern and clean design to attract customers.</p>
+</div>
+
+<div style="width:250px; padding:20px; background:#f8f9fa; border-radius:10px;">
+<h3>Full Support</h3>
+<p>We guide and support you even after delivery.</p>
+</div>
+
+</div>
+
+</section>
+<!-- TESTIMONIAL -->
+<section class="testimonials">
+    <h2>What Our Clients Say</h2>
+
+    <div class="testimonial-cards">
+
+        <div class="testimonial"><p>"Very fast and affordable service."</p><h4>- Rajesh</h4></div>
+        <div class="testimonial"><p>"Easy process and great support."</p><h4>- Pooja</h4></div>
+        <div class="testimonial"><p>"My business is now online."</p><h4>- Amit</h4></div>
+        <div class="testimonial"><p>"Highly recommended."</p><h4>- Suresh</h4></div>
+        <div class="testimonial"><p>"Good experience."</p><h4>- Neha</h4></div>
+
+        <div class="testimonial"><p>"Very helpful service."</p><h4>- Ravi</h4></div>
+        <div class="testimonial"><p>"Professional work."</p><h4>- Ankit</h4></div>
+        <div class="testimonial"><p>"Best for beginners."</p><h4>- Sunita</h4></div>
+        <div class="testimonial"><p>"Affordable pricing."</p><h4>- Deepak</h4></div>
+        <div class="testimonial"><p>"Trusted service."</p><h4>- Kiran</h4></div>
+
+        <div class="testimonial"><p>"Excellent support team."</p><h4>- Manoj</h4></div>
+        <div class="testimonial"><p>"Website delivered on time."</p><h4>- Priya</h4></div>
+        <div class="testimonial"><p>"Very smooth experience."</p><h4>- Rakesh</h4></div>
+        <div class="testimonial"><p>"Highly professional."</p><h4>- Meena</h4></div>
+        <div class="testimonial"><p>"Great value for money."</p><h4>- Vikash</h4></div>
+
+    </div>
+</section>
+
+<!-- FOUNDER -->
+<section class="founder">
+    <div class="founder-wrapper">
+
+        <div class="founder-left">
+            <img src="founder.jpeg" alt="Founder" loading="lazy">
+            <h4>Amit Arya</h4>
+            <p>Founder, Digitalconnect</p>
+        </div>
+<div class="founder-right">
+    <h2>Founder’s Message</h2>
+
+    <p>
+        At DigitalConnect, our mission is simple — to help every small and growing business in India build a strong digital presence without confusion or high cost.
+    </p>
+
+    <p>
+        We understand that many business owners struggle with online setup, government registrations, and digital growth. That’s why we provide complete support — from creating professional websites to handling essential business services like GST registration, FSSAI, Udyam registration, trademark, and more.
+    </p>
+
+    <p>
+        Our goal is not just to provide services, but to become a long-term digital partner for your business. We focus on simple solutions, affordable pricing, and real results that help your business grow.
+    </p>
+
+    <p>
+        What makes us different is our personal support, honest guidance, and commitment to every client — whether you are just starting or already running a business.
+    </p>
+
+    <p>
+        We are proudly based in Patna and serve clients across Bihar and all over India.
+    </p>
+
+    <p>
+        Let DigitalConnect help you take your business to the next level.
+    </p>
+
+    <p class="signature">
+        — Founder, DigitalConnect
+    </p>
+</div>
+    </div>
+</section>
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2026 Digitalconnect | All Rights Reserved</p>
+</footer>
+<script>
+function sendWhatsApp(service){
+    let phone = "916202725214";
+    let message = "Hello, I am interested in " + service;
+    let url = "https://wa.me/" + phone + "?text=" + encodeURIComponent(message);
+    window.open(url, "_blank");
+}
+</script>
+<script>
+function sendWhatsApp(service){
+    let phone = "919471088925";  // your WhatsApp Business number (with 91)
+    let msg = "Hello, I am interested in " + service;
+    window.open("https://wa.me/" + phone + "?text=" + encodeURIComponent(msg));
+}
+</script>
+<a href="https://wa.me/919471088925" target="_blank" 
+style="position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:15px 18px; border-radius:50%; font-size:22px; text-decoration:none; box-shadow:0 5px 15px rgba(0,0,0,0.3);">
+💬
+</a>
+</body>
+</html>
