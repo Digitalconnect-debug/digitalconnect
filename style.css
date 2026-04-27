@@ -27,7 +27,6 @@ nav a {
     text-decoration: none;
 }
 
-/* BUTTON */
 .btn {
     background: green;
     color: white;
@@ -36,7 +35,7 @@ nav a {
     cursor: pointer;
 }
 
-/* HAMBURGER (hidden on laptop) */
+/* HAMBURGER */
 .menu-toggle {
     display: none;
     font-size: 26px;
@@ -78,7 +77,6 @@ nav a {
     gap: 20px;
 }
 
-/* CARD FIX (SEO BUTTON ALIGN) */
 .card {
     padding: 15px;
     border: 1px solid #ddd;
@@ -88,7 +86,6 @@ nav a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100%;
 }
 
 .card p {
@@ -130,7 +127,6 @@ nav a {
     justify-content: center;
 }
 
-/* PASSPORT SIZE IMAGE */
 .founder-left {
     text-align: center;
 }
@@ -139,7 +135,6 @@ nav a {
     width: 90px;
     height: 110px;
     object-fit: cover;
-    object-position: top;
     border-radius: 6px;
     border: 1px solid #ccc;
 }
@@ -161,7 +156,7 @@ nav a {
 /* ================= MOBILE ONLY ================= */
 @media (max-width: 768px){
 
-    /* NAVBAR MOBILE */
+    /* NAVBAR */
     nav {
         flex-wrap: wrap;
     }
@@ -182,7 +177,6 @@ nav a {
         display: flex;
     }
 
-    /* hide top button (will be inside menu) */
     .btn {
         display: none;
     }
@@ -204,9 +198,34 @@ nav a {
         gap: 10px;
     }
 
-    /* SERVICES */
+    /* SERVICES FIX (NO OVERLAP) */
+    .services {
+        padding: 30px 15px;
+    }
+
     .cards {
         grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .card img {
+        height: auto;
+    }
+
+    .card h3 {
+        margin-top: 10px;
+    }
+
+    .card p {
+        margin: 10px 0;
+    }
+
+    .card button {
+        margin-top: 10px;
     }
 
     /* TESTIMONIAL */
