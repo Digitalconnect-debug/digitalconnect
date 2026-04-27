@@ -27,20 +27,12 @@ nav a {
     text-decoration: none;
 }
 
-/* BUTTONS */
 .btn {
     background: green;
     color: white;
     padding: 10px 15px;
     border: none;
     cursor: pointer;
-}
-
-.btn2 {
-    background: transparent;
-    color: white;
-    border: 1px solid white;
-    padding: 10px 15px;
 }
 
 /* HERO */
@@ -52,18 +44,13 @@ nav a {
     align-items: center;
 }
 
-.left {
-    width: 50%;
-}
-
-.right {
+.left, .right {
     width: 50%;
 }
 
 .right img {
     width: 100%;
     border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 .buttons {
@@ -77,213 +64,44 @@ nav a {
     background: #f9f9f9;
 }
 
-.services h2 {
-    text-align: center;
-}
-
-.service-intro {
-    text-align: center;
-    max-width: 700px;
-    margin: 0 auto 30px;
-    color: #555;
-}
-
-/* GRID LAYOUT */
 .cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    padding: 20px;
 }
 
-/* CARD DESIGN */
 .card {
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 12px;
     background: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    transition: 0.3s;
 }
 
-.card p {
-    flex-grow: 1;
-}
-
-.card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-}
-
-/* CARD IMAGE */
 .card img {
     width: 100%;
     height: 150px;
     object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 10px;
 }
 
-/* CARD BUTTON */
 .card button {
-    margin-top: 10px;
+    width: 100%;
     padding: 10px;
     background: green;
     color: white;
     border: none;
-    cursor: pointer;
-    width: 100%;
-    border-radius: 5px;
 }
 
-/* TESTIMONIAL SECTION */
-.testimonials {
-    padding: 50px;
-    background: #f9f9f9;
-    text-align: center;
-}
-
+/* TESTIMONIAL */
 .testimonial-cards {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 15px;
-    margin-top: 20px;
 }
 
 .testimonial {
     background: white;
     padding: 15px;
-    border-radius: 10px;
     border: 1px solid #ddd;
-    font-size: 13px;
-    text-align: center;
-}
-<!-- FOUNDER SECTION -->
-<section class="founder">
-    <div class="founder-container">
-
-        <!-- LEFT SIDE -->
-        <div class="founder-card">
-            <img src="founder.jpg" alt="Founder">
-            <h3>Amit Arya</h3>
-            <p>Founder, Digitalconnect</p>
-        </div>
-
-        <!-- RIGHT SIDE -->
-        <div class="founder-message">
-            <h2>Founder’s Message</h2>
-
-            <p>
-                At DigitalConnect, our mission is simple — to help every small and growing business build a strong digital presence without confusion or high cost.
-            </p>
-
-            <p>
-                We provide complete support — from professional website design to essential business services like GST, FSSAI, Udyam registration, and trademark.
-            </p>
-
-            <p>
-                Our goal is to become your long-term digital partner with simple solutions, affordable pricing, and real results.
-            </p>
-
-            <p>
-                We are proudly based in Patna and serve clients across Bihar and India.
-            </p>
-
-            <p class="signature">— Founder, DigitalConnect</p>
-        </div>
-
-    </div>
-</section>
-/* ===== FOUNDER FINAL CLEAN DESIGN ===== */
-
-.founder {
-    padding: 60px 20px;
-    background: #f4f6f8;
-}
-
-.founder-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    max-width: 1000px;
-    margin: auto;
-}
-
-/* LEFT SIDE (IMAGE) */
-.founder-left {
-    text-align: center;
-    width: 120px;
-}
-
-.founder-left img {
-    width: 70px;
-    height: 90px;
-    object-fit: cover;
-    object-position: top;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-}
-
-.founder-left h4 {
-    margin: 5px 0 0;
-}
-
-.founder-left p {
-    font-size: 13px;
-    color: gray;
-}
-
-/* RIGHT SIDE (MESSAGE BOX) */
-.founder-right {
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-    border: 1px solid #ddd;
-    max-width: 600px;
-}
-
-.founder-right h2 {
-    margin-bottom: 15px;
-}
-
-.founder-right p {
-    font-size: 14px;
-    color: #444;
-    line-height: 1.6;
-    margin-bottom: 10px;
-}
-
-.signature {
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-    .founder-wrapper {
-        flex-direction: column;
-        text-align: center;
-    }
-}.footer {
-    text-align: center;
-    padding: 20px;
-    background: black;
-    color: white;
-}
-
-/* TESTIMONIAL GRID */
-.testimonial-cards {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 15px;
-}
-
-.testimonial:hover {
-    transform: translateY(-5px);
 }
 
 /* FOUNDER */
@@ -291,441 +109,59 @@ nav a {
     display: flex;
     gap: 30px;
     align-items: center;
-    justify-content: center;
 }
 
 .founder-right {
     background: white;
     padding: 20px;
-    border-radius: 10px;
-    max-width: 500px;
-}.founder-right {
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-    border: 1px solid #ddd;
-    max-width: 600px;
 }
 
-.founder-right p {
-    line-height: 1.7;
-    color: #444;
-    margin-bottom: 12px;
-}
-
-.signature {
-    font-weight: bold;
-    margin-top: 15px;
-}
-/* DEMO PAGE */
-.demo-page {
+/* FOOTER */
+.footer {
     text-align: center;
-    padding: 50px;
-}
-
-.demo-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    margin-top: 30px;
-}
-
-.demo-card {
-    background: white;
-    border-radius: 10px;
-    border: 1px solid #ddd;
-    padding: 15px;
-    transition: 0.3s;
-}
-
-.demo-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-}
-
-.demo-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.demo-card h3 {
-    margin: 10px 0;
-}
-
-.demo-card button {
-    display: block;
-    width: 100%;
-    margin: 8px 0;
-    padding: 10px;
-    border: none;
-    background: green;
+    padding: 20px;
+    background: black;
     color: white;
-    cursor: pointer;
-    border-radius: 5px;
 }
 
-/* MOBILE */
-@media (max-width: 900px) {
-    .demo-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
-    .demo-grid {
-        grid-template-columns: 1fr;
-    }
-}
-/* DEMO CATEGORY PAGE */
-.demo-page {
-    text-align: center;
-    padding: 60px 20px;
-    background: #f4f6f8;
-}
-
-.demo-page h1 {
-    font-size: 32px;
-}
-
-.demo-page p {
-    color: #555;
-    margin-bottom: 30px;
-}
-
-.demo-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    max-width: 1100px;
-    margin: auto;
-}
-
-.demo-card {
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid #ddd;
-    transition: 0.3s;
-}
-
-.demo-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-}
-
-.demo-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-.demo-card h3 {
-    margin: 15px 0 5px;
-}
-
-.demo-card p {
-    font-size: 14px;
-    padding: 0 10px;
-}
-
-.demo-card button {
-    margin: 15px;
-    padding: 10px;
-    width: calc(100% - 30px);
-    border: none;
-    background: green;
-    color: white;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-/* MOBILE */
-@media (max-width: 900px) {
-    .demo-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
-    .demo-grid {
-        grid-template-columns: 1fr;
-    }
-/* DEMO CATEGORY PAGE */
-.demo-page {
-    text-align: center;
-    padding: 60px 20px;
-    background: #f4f6f8;
-}
-
-.demo-page h1 {
-    font-size: 32px;
-}
-
-.demo-page p {
-    color: #555;
-    margin-bottom: 30px;
-}
-
-.demo-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    max-width: 1100px;
-    margin: auto;
-}
-
-.demo-card {
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid #ddd;
-    transition: 0.3s;
-}
-
-.demo-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-}
-
-.demo-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-.demo-card h3 {
-    margin: 15px 0 5px;
-}
-
-.demo-card p {
-    font-size: 14px;
-    padding: 0 10px;
-}
-
-.demo-card button {
-    margin: 15px;
-    padding: 10px;
-    width: calc(100% - 30px);
-    border: none;
-    background: green;
-    color: white;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-/* MOBILE */
-@media (max-width: 900px) {
-    .demo-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
-    .demo-grid {
-        grid-template-columns: 1fr;
-    }
-/* DEMO CATEGORY PAGE */
-.demo-page {
-    text-align: center;
-    padding: 60px 20px;
-    background: #f4f6f8;
-}
-
-.demo-page h1 {
-    font-size: 32px;
-}
-
-.demo-page p {
-    color: #555;
-    margin-bottom: 30px;
-}
-
-.demo-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    max-width: 1100px;
-    margin: auto;
-}
-
-.demo-card {
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid #ddd;
-    transition: 0.3s;
-}
-
-.demo-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-}
-
-.demo-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-.demo-card h3 {
-    margin: 15px 0 5px;
-}
-
-.demo-card p {
-    font-size: 14px;
-    padding: 0 10px;
-}
-
-.demo-card button {
-    margin: 15px;
-    padding: 10px;
-    width: calc(100% - 30px);
-    border: none;
-    background: green;
-    color: white;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-/* MOBILE */
-@media (max-width: 900px) {
-    .demo-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
-    .demo-grid {
-        grid-template-columns: 1fr;
-    }
-/* DEMO CATEGORY PAGE */
-.demo-page {
-    text-align: center;
-    padding: 60px 20px;
-    background: #f4f6f8;
-}
-
-.demo-page h1 {
-    font-size: 32px;
-}
-
-.demo-page p {
-    color: #555;
-    margin-bottom: 30px;
-}
-
-.demo-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    max-width: 1100px;
-    margin: auto;
-}
-
-.demo-card {
-    background: white;
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid #ddd;
-    transition: 0.3s;
-}
-
-.demo-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-}
-
-.demo-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-.demo-card h3 {
-    margin: 15px 0 5px;
-}
-
-.demo-card p {
-    font-size: 14px;
-    padding: 0 10px;
-}
-
-.demo-card button {
-    margin: 15px;
-    padding: 10px;
-    width: calc(100% - 30px);
-    border: none;
-    background: green;
-    color: white;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-/* MOBILE */
-@media (max-width: 900px) {
-    .demo-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
-    .demo-grid {
-        grid-template-columns: 1fr;
-        /* MOBILE RESPONSIVE */
+/* ================= MOBILE ================= */
 @media (max-width: 768px){
 
-    h1{
-        font-size: 24px;
+    nav{
+        flex-direction: column;
         text-align: center;
     }
 
-    p{
-        font-size: 14px;
-        text-align: center;
+    nav ul{
+        flex-direction: column;
     }
 
     .hero{
+        flex-direction: column;
         padding: 20px;
         text-align: center;
     }
 
-    .hero-buttons{
+    .left, .right{
+        width: 100%;
+    }
+
+    .buttons{
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
 
-    .hero-buttons button{
-        width: 100%;
-    }
-
-    .services{
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-
-    .service-card{
-        text-align: center;
-    }
-
-    .demo-grid{
+    .cards{
         grid-template-columns: 1fr;
     }
 
-    .demo-card{
-        margin-bottom: 20px;
+    .testimonial-cards{
+        grid-template-columns: 1fr;
     }
 
-    .testimonial{
-        padding: 15px;
+    .founder-wrapper{
+        flex-direction: column;
         text-align: center;
-    }
-
-    .testimonial p{
-        font-size: 14px;
-    }
-}
     }
 }
