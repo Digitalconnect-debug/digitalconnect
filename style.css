@@ -673,5 +673,59 @@ nav a {
 @media (max-width: 600px) {
     .demo-grid {
         grid-template-columns: 1fr;
+        /* MOBILE RESPONSIVE */
+@media (max-width: 768px){
+
+    h1{
+        font-size: 24px;
+        text-align: center;
+    }
+
+    p{
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .hero{
+        padding: 20px;
+        text-align: center;
+    }
+
+    .hero-buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero-buttons button{
+        width: 100%;
+    }
+
+    .services{
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .service-card{
+        text-align: center;
+    }
+
+    .demo-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .demo-card{
+        margin-bottom: 20px;
+    }
+
+    .testimonial{
+        padding: 15px;
+        text-align: center;
+    }
+
+    .testimonial p{
+        font-size: 14px;
+    }
+}
     }
 }
