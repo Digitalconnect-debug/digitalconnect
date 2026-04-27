@@ -11,12 +11,22 @@
 <!-- NAVBAR -->
 <nav>
     <h2>Digitalconnect</h2>
-    <ul>
+
+    <!-- 3 LINE MENU -->
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <!-- MENU ITEMS -->
+    <ul id="menu">
         <li><a href="#home">Home</a></li>
         <li><a href="#services">Services</a></li>
-        <li><a href="#contact">contact</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#" onclick="sendWhatsApp('Consultation')">Get Free Consultation</a></li>
     </ul>
-    <button class="btn" onclick="sendWhatsApp('SEO Service')"">Get Free Consultation</button>
+
+    <!-- BUTTON (VISIBLE ON LAPTOP ONLY) -->
+    <button class="btn" onclick="sendWhatsApp('Consultation')">
+        Get Free Consultation
+    </button>
 </nav>
 
 <!-- HERO -->
