@@ -27,11 +27,19 @@ nav a {
     text-decoration: none;
 }
 
+/* BUTTON */
 .btn {
     background: green;
     color: white;
     padding: 10px 15px;
     border: none;
+    cursor: pointer;
+}
+
+/* HAMBURGER (hidden on laptop) */
+.menu-toggle {
+    display: none;
+    font-size: 26px;
     cursor: pointer;
 }
 
@@ -70,11 +78,21 @@ nav a {
     gap: 20px;
 }
 
+/* CARD FIX (SEO BUTTON ALIGN) */
 .card {
     padding: 15px;
     border: 1px solid #ddd;
     border-radius: 12px;
     background: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card p {
+    flex-grow: 1;
 }
 
 .card img {
@@ -109,11 +127,27 @@ nav a {
     display: flex;
     gap: 30px;
     align-items: center;
+    justify-content: center;
+}
+
+/* PASSPORT SIZE IMAGE */
+.founder-left {
+    text-align: center;
+}
+
+.founder-left img {
+    width: 90px;
+    height: 110px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 6px;
+    border: 1px solid #ccc;
 }
 
 .founder-right {
     background: white;
     padding: 20px;
+    max-width: 600px;
 }
 
 /* FOOTER */
@@ -124,44 +158,70 @@ nav a {
     color: white;
 }
 
-/* ================= MOBILE ================= */
+/* ================= MOBILE ONLY ================= */
 @media (max-width: 768px){
 
-    nav{
-        flex-direction: column;
-        text-align: center;
+    /* NAVBAR MOBILE */
+    nav {
+        flex-wrap: wrap;
     }
 
-    nav ul{
-        flex-direction: column;
+    .menu-toggle {
+        display: block;
     }
 
-    .hero{
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: black;
+        margin-top: 10px;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    /* hide top button (will be inside menu) */
+    .btn {
+        display: none;
+    }
+
+    /* HERO */
+    .hero {
         flex-direction: column;
         padding: 20px;
         text-align: center;
     }
 
-    .left, .right{
+    .left, .right {
         width: 100%;
     }
 
-    .buttons{
+    .buttons {
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
 
-    .cards{
+    /* SERVICES */
+    .cards {
         grid-template-columns: 1fr;
     }
 
-    .testimonial-cards{
+    /* TESTIMONIAL */
+    .testimonial-cards {
         grid-template-columns: 1fr;
     }
 
-    .founder-wrapper{
+    /* FOUNDER */
+    .founder-wrapper {
         flex-direction: column;
         text-align: center;
+    }
+
+    .founder-left img {
+        width: 70px;
+        height: 90px;
     }
 }
