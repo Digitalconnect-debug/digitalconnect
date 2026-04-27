@@ -132,8 +132,8 @@ nav a {
 }
 
 .founder-left img {
-    width: 90px;
-    height: 110px;
+    width: 80px;   /* passport size */
+    height: 100px;
     object-fit: cover;
     border-radius: 6px;
     border: 1px solid #ccc;
@@ -151,6 +151,59 @@ nav a {
     padding: 20px;
     background: black;
     color: white;
+}
+
+/* ================= DEMO PAGE ================= */
+
+.demo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 20px;
+}
+
+.demo-card {
+    background: white;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: 0.3s;
+}
+
+.demo-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.demo-card h3 {
+    margin: 10px;
+}
+
+.demo-card p {
+    font-size: 14px;
+    padding: 0 10px;
+    flex-grow: 1;
+}
+
+.demo-card button {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    background: green;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.demo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
 /* ================= MOBILE ONLY ================= */
@@ -198,7 +251,7 @@ nav a {
         gap: 10px;
     }
 
-    /* SERVICES FIX (NO OVERLAP) */
+    /* SERVICES FIX */
     .services {
         padding: 30px 15px;
     }
@@ -210,22 +263,6 @@ nav a {
 
     .card {
         margin-bottom: 20px;
-    }
-
-    .card img {
-        height: auto;
-    }
-
-    .card h3 {
-        margin-top: 10px;
-    }
-
-    .card p {
-        margin: 10px 0;
-    }
-
-    .card button {
-        margin-top: 10px;
     }
 
     /* TESTIMONIAL */
@@ -243,68 +280,8 @@ nav a {
         width: 70px;
         height: 90px;
     }
-}/* ================= DEMO / CATEGORY FIX ================= */
 
-/* GRID */
-.demo-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-    padding: 20px;
-}
-
-/* CARD */
-.demo-card {
-    background: white;
-    border-radius: 12px;
-    border: 1px solid #ddd;
-    overflow: hidden;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    transition: 0.3s;
-}
-
-/* IMAGE FIX */
-.demo-card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-/* TEXT */
-.demo-card h3 {
-    margin: 10px;
-}
-
-.demo-card p {
-    font-size: 14px;
-    padding: 0 10px;
-    flex-grow: 1;
-}
-
-/* BUTTON FIX */
-.demo-card button {
-    margin: 10px;
-    padding: 10px;
-    border: none;
-    background: green;
-    color: white;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-/* HOVER */
-.demo-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-
-/* ================= MOBILE FIX ================= */
-@media (max-width: 768px){
-
+    /* DEMO PAGE FIX */
     .demo-grid {
         grid-template-columns: 1fr;
     }
