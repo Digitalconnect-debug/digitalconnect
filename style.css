@@ -209,3 +209,55 @@ nav a {
         margin: 30px 0;
     }
 }
+
+/* ================= FINAL FIX ================= */
+
+/* FIX 1: MOBILE BUTTON BACK */
+@media (max-width: 768px){
+    .view-btn {
+        display: block !important;
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    .tablet-only-btn {
+        display: none !important;
+    }
+}
+
+/* FIX 2: TABLET BUTTON */
+@media (min-width: 769px) and (max-width: 1024px){
+    .view-btn {
+        display: none !important;
+    }
+
+    .tablet-only-btn {
+        display: block !important;
+        text-align: center;
+        margin: 40px 0;
+    }
+}
+
+/* FIX 3: RESTORE GREEN BUTTONS EVERYWHERE */
+.btn,
+.card button,
+.demo-card button {
+    background: green !important;
+    color: white !important;
+    border: none;
+}
+
+/* FIX 4: DEMO PAGE BUTTON STYLE (VERY IMPORTANT) */
+.demo-card button {
+    background: green !important;
+    color: white !important;
+    border-radius: 6px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* HOVER EFFECT BACK */
+.demo-card button:hover,
+.card button:hover {
+    background: #0a7f0a !important;
+}
