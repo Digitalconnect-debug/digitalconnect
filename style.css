@@ -213,3 +213,9 @@ nav a {
 .demo-card button:hover {
     background: #0a7f0a;
 }
+/* FINAL MOBILE BUTTON FORCE FIX */
+@media (max-width: 768px){
+    .view-btn .btn {
+        display: inline-block !important;
+    }
+}
