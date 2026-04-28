@@ -288,5 +288,42 @@ nav a {
 
     .demo-card img {
         height: 160px;
+        /* ===== TABLET FIX (IMPORTANT) ===== */
+@media (min-width: 769px) and (max-width: 1024px){
+
+    /* SERVICES GRID */
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    /* DEMO GRID */
+    .demo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* BUTTON VISIBILITY FIX */
+    .card button,
+    .demo-card button {
+        display: block !important;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    /* FIX CONTENT CUT ISSUE */
+    .card {
+        height: auto;
+    }
+
+    /* HERO FIX */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left, .right {
+        width: 100%;
+    }
+}
     }
 }
