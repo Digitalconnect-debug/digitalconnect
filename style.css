@@ -132,7 +132,6 @@ nav a {
 .tablet-only-btn {
     display: none;
 }
-
 /* ================= MOBILE ================= */
 @media (max-width: 768px){
 
@@ -170,21 +169,23 @@ nav a {
         text-align: center;
     }
 
-    /* IMPORTANT: MOBILE BUTTON SHOULD SHOW */
+    /* ✅ SHOW BUTTON ON MOBILE */
     .view-btn {
-        display: none !important;
+        display: block !important;
+        text-align: center;
+        margin: 40px 0;
     }
 
+    /* ❌ keep tablet button hidden on mobile */
     .tablet-only-btn {
         display: none !important;
     }
 
-    /* hide top navbar green button only */
+    /* hide ONLY navbar button */
     nav .btn {
         display: none;
     }
 }
-
 /* ================= TABLET ONLY ================= */
 @media (min-width: 769px) and (max-width: 1024px){
 
