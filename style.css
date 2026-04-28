@@ -323,6 +323,36 @@ nav a {
 
     .left, .right {
         width: 100%;
+
+        /* CENTER BUTTON */
+.view-btn {
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* TABLET FIX ONLY */
+.tablet-only-btn {
+    display: none;
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+
+    /* hide original button */
+    .view-btn {
+        display: none;
+    }
+
+    /* show tablet button */
+    .tablet-only-btn {
+        display: block;
+        text-align: center;
+        margin: 40px 0;
+    }
+
+    .tablet-only-btn button {
+        width: 250px;
+    }
+}
     }
 }
     }
