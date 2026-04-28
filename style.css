@@ -35,13 +35,6 @@ nav a {
     cursor: pointer;
 }
 
-/* HAMBURGER */
-.menu-toggle {
-    display: none;
-    font-size: 26px;
-    cursor: pointer;
-}
-
 /* HERO */
 .hero {
     display: flex;
@@ -58,10 +51,6 @@ nav a {
 .right img {
     width: 100%;
     border-radius: 12px;
-}
-
-.buttons {
-    margin: 20px 0;
 }
 
 /* SERVICES */
@@ -85,10 +74,6 @@ nav a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.card p {
-    flex-grow: 1;
 }
 
 .card img {
@@ -126,50 +111,22 @@ nav a {
     justify-content: center;
 }
 
-.founder-left {
-    text-align: center;
-}
-
 .founder-left img {
     width: 80px;
     height: 100px;
     object-fit: cover;
-    border-radius: 6px;
-    border: 1px solid #ccc;
 }
 
-.founder-right {
-    background: white;
-    padding: 20px;
-    max-width: 600px;
-}
-
-/* FOOTER */
-.footer {
-    text-align: center;
-    padding: 20px;
-    background: black;
-    color: white;
-}
-
-/* ================= DEMO PAGE ================= */
-
+/* DEMO GRID */
 .demo-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
-    padding: 20px;
 }
 
 .demo-card {
-    background: white;
-    border-radius: 12px;
-    border: 1px solid #ddd;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    transition: 0.3s;
 }
 
 .demo-card img {
@@ -178,61 +135,24 @@ nav a {
     object-fit: cover;
 }
 
-.demo-card h3 {
-    margin: 10px;
+/* ================= BUTTON CONTROL ================= */
+
+/* Default (Laptop) */
+.view-btn {
+    display: block;
+    text-align: center;
+    margin: 40px 0;
 }
 
-.demo-card p {
-    font-size: 14px;
-    padding: 0 10px;
-    flex-grow: 1;
-}
-
-.demo-card button {
-    margin: 10px;
-    padding: 10px;
-    border: none;
-    background: green;
-    color: white;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-.demo-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+.tablet-only-btn {
+    display: none;
 }
 
 /* ================= MOBILE ================= */
 @media (max-width: 768px){
 
-    nav {
-        flex-wrap: wrap;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background: black;
-        margin-top: 10px;
-    }
-
-    nav ul.active {
-        display: flex;
-    }
-
-    .btn {
-        display: none;
-    }
-
     .hero {
         flex-direction: column;
-        padding: 20px;
         text-align: center;
     }
 
@@ -240,26 +160,15 @@ nav a {
         width: 100%;
     }
 
-    .buttons {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .services {
-        padding: 30px 15px;
-    }
-
     .cards {
         grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .card {
-        margin-bottom: 20px;
     }
 
     .testimonial-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .demo-grid {
         grid-template-columns: 1fr;
     }
 
@@ -268,21 +177,17 @@ nav a {
         text-align: center;
     }
 
-    .founder-left img {
-        width: 70px;
-        height: 90px;
+    /* MOBILE → show original button */
+    .view-btn {
+        display: block;
     }
 
-    .demo-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .demo-card img {
-        height: 160px;
+    .tablet-only-btn {
+        display: none;
     }
 }
 
-/* ================= TABLET FIX ================= */
+/* ================= TABLET ONLY ================= */
 @media (min-width: 769px) and (max-width: 1024px){
 
     .cards {
@@ -293,38 +198,14 @@ nav a {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .left, .right {
-        width: 100%;
-    }
-
-    /* BUTTON FIX */
-    .tablet-only-btn {
-        display: block;
-        text-align: center;
-        margin: 40px 0;
-    }
-
+    /* IMPORTANT FIX */
     .view-btn {
-        display: none;
+        display: none;   /* hide bottom button */
     }
 
-    .tablet-only-btn button {
-        width: 250px;
+    .tablet-only-btn {
+        display: block;  /* show tablet button */
+        text-align: center;
+        margin: 30px 0;
     }
-}
-
-/* DEFAULT HIDE TABLET BUTTON */
-.tablet-only-btn {
-    display: none;
-}
-
-/* NORMAL BUTTON CENTER */
-.view-btn {
-    text-align: center;
-    margin: 40px 0;
 }
