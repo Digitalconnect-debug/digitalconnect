@@ -172,7 +172,7 @@ nav a {
 
     /* IMPORTANT: MOBILE BUTTON SHOULD SHOW */
     .view-btn {
-        display: block !important;
+        display: none !important;
     }
 
     .tablet-only-btn {
