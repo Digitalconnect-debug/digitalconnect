@@ -82,7 +82,6 @@ nav a {
     border: 1px solid #ddd;
     border-radius: 12px;
     background: white;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -132,7 +131,7 @@ nav a {
 }
 
 .founder-left img {
-    width: 80px;   /* passport size */
+    width: 80px;
     height: 100px;
     object-fit: cover;
     border-radius: 6px;
@@ -167,11 +166,9 @@ nav a {
     border-radius: 12px;
     border: 1px solid #ddd;
     overflow: hidden;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     transition: 0.3s;
 }
 
@@ -206,10 +203,9 @@ nav a {
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-/* ================= MOBILE ONLY ================= */
+/* ================= MOBILE ================= */
 @media (max-width: 768px){
 
-    /* NAVBAR */
     nav {
         flex-wrap: wrap;
     }
@@ -234,7 +230,6 @@ nav a {
         display: none;
     }
 
-    /* HERO */
     .hero {
         flex-direction: column;
         padding: 20px;
@@ -251,7 +246,6 @@ nav a {
         gap: 10px;
     }
 
-    /* SERVICES FIX */
     .services {
         padding: 30px 15px;
     }
@@ -265,12 +259,10 @@ nav a {
         margin-bottom: 20px;
     }
 
-    /* TESTIMONIAL */
     .testimonial-cards {
         grid-template-columns: 1fr;
     }
 
-    /* FOUNDER */
     .founder-wrapper {
         flex-direction: column;
         text-align: center;
@@ -281,41 +273,26 @@ nav a {
         height: 90px;
     }
 
-    /* DEMO PAGE FIX */
     .demo-grid {
         grid-template-columns: 1fr;
     }
 
     .demo-card img {
         height: 160px;
-        /* ===== TABLET FIX (IMPORTANT) ===== */
+    }
+}
+
+/* ================= TABLET FIX ================= */
 @media (min-width: 769px) and (max-width: 1024px){
 
-    /* SERVICES GRID */
     .cards {
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
     }
 
-    /* DEMO GRID */
     .demo-grid {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* BUTTON VISIBILITY FIX */
-    .card button,
-    .demo-card button {
-        display: block !important;
-        width: 100%;
-        margin-top: 10px;
-    }
-
-    /* FIX CONTENT CUT ISSUE */
-    .card {
-        height: auto;
-    }
-
-    /* HERO FIX */
     .hero {
         flex-direction: column;
         text-align: center;
@@ -323,37 +300,31 @@ nav a {
 
     .left, .right {
         width: 100%;
-
-        /* CENTER BUTTON */
-.view-btn {
-    text-align: center;
-    margin: 40px 0;
-}
-
-/* TABLET FIX ONLY */
-.tablet-only-btn {
-    display: none;
-}
-
-@media (min-width: 769px) and (max-width: 1024px){
-
-    /* hide original button */
-    .view-btn {
-        display: none;
     }
 
-    /* show tablet button */
+    /* BUTTON FIX */
     .tablet-only-btn {
         display: block;
         text-align: center;
         margin: 40px 0;
     }
 
+    .view-btn {
+        display: none;
+    }
+
     .tablet-only-btn button {
         width: 250px;
     }
 }
-    }
+
+/* DEFAULT HIDE TABLET BUTTON */
+.tablet-only-btn {
+    display: none;
 }
-    }
+
+/* NORMAL BUTTON CENTER */
+.view-btn {
+    text-align: center;
+    margin: 40px 0;
 }
