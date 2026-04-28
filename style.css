@@ -261,3 +261,36 @@ nav a {
 .card button:hover {
     background: #0a7f0a !important;
 }
+
+/* ================= MOBILE NAVBAR FINAL FIX ================= */
+@media (max-width: 768px){
+
+    body {
+        overflow-x: hidden;   /* prevents white side scroll */
+    }
+
+    nav {
+        width: 100%;
+        padding: 10px 15px;
+        box-sizing: border-box;
+    }
+
+    /* FIX MENU ALIGNMENT */
+    .menu-toggle {
+        margin-left: auto;   /* push to right side */
+    }
+
+    /* FIX UL MENU */
+    nav ul {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* FIX BUTTON ISSUE */
+    .btn {
+        display: none !important;  /* hide top green button only on mobile */
+    }
+
+}
