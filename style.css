@@ -1,5 +1,13 @@
 /* RESET */
-body {
+body 
+* {
+    box-sizing: border-box;
+}
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+{
     margin: 0;
     font-family: Arial, sans-serif;
     overflow-x: hidden; /* FIX WHITE SPACE */
@@ -7,16 +15,18 @@ body {
 
 /* NAVBAR */
 nav {
+ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding: 15px 15px;  /* reduced from 30px */
     background: black;
     color: white;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    width: 100%;
 }
+
 
 nav h2 {
     margin: 0;
@@ -51,7 +61,17 @@ nav ul li a {
 }
 
 /* HERO */
-.hero {
+.hero 
+    .hero {
+    display: flex;
+    flex-wrap: wrap;  /* IMPORTANT */
+    padding: 20px;
+}
+
+.left, .right {
+    width: 100%;
+}
+    {
     display: flex;
     padding: 50px;
     background: linear-gradient(to right, #000, #333);
