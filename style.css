@@ -141,51 +141,53 @@ nav a {
 
     nav {
         flex-wrap: wrap;
+        padding: 10px 15px;
     }
 
-    .hero {
-        flex-direction: column;
-        text-align: center;
+    /* LOGO */
+    nav h2 {
+        font-size: 20px;
     }
 
-    .left, .right {
-        width: 100%;
+    /* HAMBURGER ICON */
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+        font-size: 24px;
+        cursor: pointer;
     }
 
-    .cards {
-        grid-template-columns: 1fr;
-    }
-
-    .testimonial-cards {
-        grid-template-columns: 1fr;
-    }
-
-    .demo-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .founder-wrapper {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    /* ✅ SHOW BUTTON ON MOBILE */
-    .view-btn {
-        display: block !important;
-        text-align: center;
-        margin: 40px 0;
-    }
-
-    /* ❌ keep tablet button hidden on mobile */
-    .tablet-only-btn {
-        display: none !important;
-    }
-
-    /* hide ONLY navbar button */
-    nav .btn {
+    /* MENU LIST (HIDDEN FIRST) */
+    nav ul {
         display: none;
+        flex-direction: column;
+        width: 100%;
+        background: black;
+        margin-top: 10px;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    /* WHEN ACTIVE (CLICKED) */
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+        display: block;
+    }
+
+    /* FIX BIG BUTTON BREAKING */
+    nav .btn {
+        display: none;  /* hide from navbar on mobile */
     }
 }
+
 /* ================= TABLET ONLY ================= */
 @media (min-width: 769px) and (max-width: 1024px){
 
