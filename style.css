@@ -1,50 +1,39 @@
 /* RESET */
-body 
 * {
     box-sizing: border-box;
 }
-html, body {
-    overflow-x: hidden;
-    width: 100%;
-}
-{
+
+body {
     margin: 0;
     font-family: Arial, sans-serif;
-    overflow-x: hidden; /* FIX WHITE SPACE */
+    overflow-x: hidden;
 }
 
 /* NAVBAR */
 nav {
- nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 15px;  /* reduced from 30px */
+    padding: 15px 20px;
     background: black;
     color: white;
     position: sticky;
     top: 0;
-    width: 100%;
 }
 
-
-nav h2 {
-    margin: 0;
-}
-
-/* MENU */
 nav ul {
     display: flex;
     list-style: none;
     gap: 20px;
+    margin: 0;
+    padding: 0;
 }
 
-nav ul li a {
+nav a {
     color: white;
     text-decoration: none;
 }
 
-/* BUTTON */
 .btn {
     background: green;
     color: white;
@@ -61,19 +50,10 @@ nav ul li a {
 }
 
 /* HERO */
-.hero 
-    .hero {
+.hero {
     display: flex;
-    flex-wrap: wrap;  /* IMPORTANT */
-    padding: 20px;
-}
-
-.left, .right {
-    width: 100%;
-}
-    {
-    display: flex;
-    padding: 50px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
     background: linear-gradient(to right, #000, #333);
     color: white;
     align-items: center;
@@ -88,14 +68,9 @@ nav ul li a {
     border-radius: 12px;
 }
 
-.buttons button {
-    margin: 5px;
-    padding: 10px 15px;
-}
-
 /* SERVICES */
 .services {
-    padding: 50px;
+    padding: 50px 20px;
     text-align: center;
     background: #f9f9f9;
 }
@@ -155,7 +130,6 @@ nav ul li a {
 /* ================= MOBILE ================= */
 @media (max-width: 768px){
 
-    /* NAVBAR FIX */
     nav {
         flex-wrap: wrap;
     }
@@ -171,7 +145,6 @@ nav ul li a {
         width: 100%;
         background: black;
         margin-top: 10px;
-        padding: 0;
     }
 
     nav ul.active {
@@ -183,15 +156,13 @@ nav ul li a {
         padding: 10px 0;
     }
 
-    /* HIDE ONLY TOP BUTTON */
+    /* hide top navbar button only */
     nav .btn {
         display: none;
     }
 
-    /* HERO */
     .hero {
         flex-direction: column;
-        padding: 20px;
         text-align: center;
     }
 
@@ -199,7 +170,6 @@ nav ul li a {
         width: 100%;
     }
 
-    /* SERVICES */
     .cards {
         grid-template-columns: 1fr;
     }
@@ -211,11 +181,6 @@ nav ul li a {
     .founder-wrapper {
         flex-direction: column;
         text-align: center;
-    }
-
-    /* IMPORTANT FIX: KEEP BUTTONS */
-    .btn {
-        display: inline-block !important;
     }
 }
 
