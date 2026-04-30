@@ -484,3 +484,10 @@ a, button {
     height: 3px;
     background: linear-gradient(to right, #28a745, #007bff);
 }
+/* Make text white in category cards */
+.overlay p {
+    color: white;
+}
+.overlay h3 {
+    color: white;
+}
