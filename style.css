@@ -391,3 +391,25 @@ a, button {
 .overlay button:hover {
     background: #218838;
 }
+/* ===== CENTER ONLY HEADING AREA ===== */
+
+.demo-page {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* Center heading + paragraph block */
+.demo-page h1,
+.demo-page p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+.demo-page h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.demo-page p {
+    color: #666;
+}
